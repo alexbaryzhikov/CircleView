@@ -6,24 +6,21 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXCopyFilesBuildPhase section */
-		EA492A2C2D2C48B600E59539 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
+/* Begin PBXBuildFile section */
+		EA492AE82D2DC67700E59539 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA492A392D2C490700E59539 /* Foundation.framework */; };
+		EA492AE92D2DC67D00E59539 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA492A3B2D2C491100E59539 /* Metal.framework */; };
+		EA492AEA2D2DC68300E59539 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA492A3D2D2C491800E59539 /* MetalKit.framework */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EA492A2E2D2C48B600E59539 /* CircleView */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CircleView; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA492A392D2C490700E59539 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA492A3B2D2C491100E59539 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		EA492A3D2D2C491800E59539 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		EA492AD72D2DC5E300E59539 /* CircleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		EA492A302D2C48B600E59539 /* CircleView */ = {
+		EA492AD82D2DC5E300E59539 /* CircleView */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = CircleView;
 			sourceTree = "<group>";
@@ -31,10 +28,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EA492A2B2D2C48B600E59539 /* Frameworks */ = {
+		EA492AD42D2DC5E300E59539 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA492AEA2D2DC68300E59539 /* MetalKit.framework in Frameworks */,
+				EA492AE92D2DC67D00E59539 /* Metal.framework in Frameworks */,
+				EA492AE82D2DC67700E59539 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,7 +44,8 @@
 		EA492A252D2C48B600E59539 = {
 			isa = PBXGroup;
 			children = (
-				EA492A302D2C48B600E59539 /* CircleView */,
+				EA492AD82D2DC5E300E59539 /* CircleView */,
+				EA492A382D2C490700E59539 /* Frameworks */,
 				EA492A2F2D2C48B600E59539 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,35 +53,45 @@
 		EA492A2F2D2C48B600E59539 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EA492A2E2D2C48B600E59539 /* CircleView */,
+				EA492AD72D2DC5E300E59539 /* CircleView.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EA492A382D2C490700E59539 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA492A3D2D2C491800E59539 /* MetalKit.framework */,
+				EA492A3B2D2C491100E59539 /* Metal.framework */,
+				EA492A392D2C490700E59539 /* Foundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EA492A2D2D2C48B600E59539 /* CircleView */ = {
+		EA492AD62D2DC5E300E59539 /* CircleView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA492A352D2C48B600E59539 /* Build configuration list for PBXNativeTarget "CircleView" */;
+			buildConfigurationList = EA492AE32D2DC5E500E59539 /* Build configuration list for PBXNativeTarget "CircleView" */;
 			buildPhases = (
-				EA492A2A2D2C48B600E59539 /* Sources */,
-				EA492A2B2D2C48B600E59539 /* Frameworks */,
-				EA492A2C2D2C48B600E59539 /* CopyFiles */,
+				EA492AD32D2DC5E300E59539 /* Sources */,
+				EA492AD42D2DC5E300E59539 /* Frameworks */,
+				EA492AD52D2DC5E300E59539 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				EA492A302D2C48B600E59539 /* CircleView */,
+				EA492AD82D2DC5E300E59539 /* CircleView */,
 			);
 			name = CircleView;
 			packageProductDependencies = (
 			);
-			productName = CircleView;
-			productReference = EA492A2E2D2C48B600E59539 /* CircleView */;
-			productType = "com.apple.product-type.tool";
+			productName = CircleViewApp;
+			productReference = EA492AD72D2DC5E300E59539 /* CircleView.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -89,9 +100,10 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					EA492A2D2D2C48B600E59539 = {
+					EA492AD62D2DC5E300E59539 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
@@ -110,13 +122,23 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EA492A2D2D2C48B600E59539 /* CircleView */,
+				EA492AD62D2DC5E300E59539 /* CircleView */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		EA492AD52D2DC5E300E59539 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		EA492A2A2D2C48B600E59539 /* Sources */ = {
+		EA492AD32D2DC5E300E59539 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -130,7 +152,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -163,7 +184,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -191,7 +211,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -224,7 +243,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -241,18 +259,50 @@
 			};
 			name = Release;
 		};
-		EA492A362D2C48B600E59539 /* Debug */ = {
+		EA492AE42D2DC5E500E59539 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp",
+					"metal-cpp-extensions",
+				);
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexb.CircleView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		EA492A372D2C48B600E59539 /* Release */ = {
+		EA492AE52D2DC5E500E59539 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"metal-cpp",
+					"metal-cpp-extensions",
+				);
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexb.CircleView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -269,11 +319,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EA492A352D2C48B600E59539 /* Build configuration list for PBXNativeTarget "CircleView" */ = {
+		EA492AE32D2DC5E500E59539 /* Build configuration list for PBXNativeTarget "CircleView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EA492A362D2C48B600E59539 /* Debug */,
-				EA492A372D2C48B600E59539 /* Release */,
+				EA492AE42D2DC5E500E59539 /* Debug */,
+				EA492AE52D2DC5E500E59539 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
