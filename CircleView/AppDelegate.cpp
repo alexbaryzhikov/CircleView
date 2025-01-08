@@ -1,10 +1,7 @@
 #include "AppDelegate.hpp"
 #include "AutoRelease.hpp"
 
-static constexpr CGRect frame = {
-    .origin = {100.0, 100.0},
-    .size = {1000.0, 1000.0}
-};
+static constexpr CGRect frame = {.origin = {0, 0}, .size = {1000, 1000}};
 
 AppDelegate::AppDelegate(std::shared_ptr<MTL::Device> device)
 : device(device)
@@ -50,7 +47,7 @@ void AppDelegate::applicationWillFinishLaunching(NS::Notification* notification)
 }
 
 void AppDelegate::applicationDidFinishLaunching(NS::Notification* notification) {
-    metalViewDelegate = std::make_unique<MetalViewDelegate>(device);
+    metalViewDelegate = std::make_unique<MetalViewDelegate>(device, frame.size);
     metalView = sharedPtr(MTK::View::alloc()->init(frame, device.get()));
     metalView->setDelegate(metalViewDelegate.get());
     metalView->setColorPixelFormat(MTL::PixelFormat::PixelFormatBGRA8Unorm_sRGB);

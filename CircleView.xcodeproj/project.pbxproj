@@ -19,9 +19,22 @@
 		EA492AD72D2DC5E300E59539 /* CircleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EA492CD72D30190800E59539 /* Exceptions for "CircleView" folder in "CircleView" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = EA492AD62D2DC5E300E59539 /* CircleView */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		EA492AD82D2DC5E300E59539 /* CircleView */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				EA492CD72D30190800E59539 /* Exceptions for "CircleView" folder in "CircleView" target */,
+			);
 			path = CircleView;
 			sourceTree = "<group>";
 		};
@@ -272,6 +285,7 @@
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
+				INFOPLIST_FILE = CircleView/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -296,6 +310,7 @@
 					"metal-cpp",
 					"metal-cpp-extensions",
 				);
+				INFOPLIST_FILE = CircleView/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

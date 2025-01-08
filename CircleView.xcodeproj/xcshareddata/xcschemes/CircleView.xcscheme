@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EA492AD62D2DC5E300E59539"
-               BuildableName = "CircleViewApp.app"
-               BlueprintName = "CircleViewApp"
+               BuildableName = "CircleView.app"
+               BlueprintName = "CircleView"
                ReferencedContainer = "container:CircleView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EA492AD62D2DC5E300E59539"
-            BuildableName = "CircleViewApp.app"
-            BlueprintName = "CircleViewApp"
+            BuildableName = "CircleView.app"
+            BlueprintName = "CircleView"
             ReferencedContainer = "container:CircleView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EA492AD62D2DC5E300E59539"
-            BuildableName = "CircleViewApp.app"
-            BlueprintName = "CircleViewApp"
+            BuildableName = "CircleView.app"
+            BlueprintName = "CircleView"
             ReferencedContainer = "container:CircleView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
